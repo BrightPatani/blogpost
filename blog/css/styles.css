@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+article {
+    transition: transform 0.2s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
