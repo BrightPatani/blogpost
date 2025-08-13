@@ -1,24 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recent Posts - Styled</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#3B82F6',
-                        secondary: '#1E40AF'
-                    }
-                }
-            }
-        }
-    </script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</head>
 <body class="bg-gradient-to-br from-gray-50 to-blue-50 min-h-screen">
     <main class="max-w-4xl mx-auto px-4 py-8">
         <div class="mb-8">
@@ -146,7 +125,6 @@
  
 
     <script>
-        // Add some interactive functionality
         document.addEventListener('DOMContentLoaded', function() {
             // Animate cards on scroll
             const cards = document.querySelectorAll('article');
@@ -161,29 +139,6 @@
 
             cards.forEach(card => {
                 observer.observe(card);
-            });
-
-            // Add ripple effect to buttons
-            const buttons = document.querySelectorAll('button, a');
-            buttons.forEach(button => {
-                button.addEventListener('click', function(e) {
-                    const ripple = document.createElement('span');
-                    const rect = this.getBoundingClientRect();
-                    const size = Math.max(rect.width, rect.height);
-                    const x = e.clientX - rect.left - size / 2;
-                    const y = e.clientY - rect.top - size / 2;
-                    
-                    ripple.style.width = ripple.style.height = size + 'px';
-                    ripple.style.left = x + 'px';
-                    ripple.style.top = y + 'px';
-                    ripple.classList.add('ripple');
-                    
-                    this.appendChild(ripple);
-                    
-                    setTimeout(() => {
-                        ripple.remove();
-                    }, 600);
-                });
             });
         });
     </script>

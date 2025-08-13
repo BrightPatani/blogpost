@@ -1,23 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enhanced Profile Section</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#3B82F6',
-                        secondary: '#1E40AF'
-                    }
-                }
-            }
-        }
-    </script>
-</head>
 <body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
     <main class="container mx-auto px-4 py-8">
         <!-- Profile Header -->
@@ -175,22 +155,6 @@
                 fileNameElement.classList.add('hidden');
             }
         }
-
-        // Add smooth hover effects
-        document.addEventListener('DOMContentLoaded', function() {
-            const form = document.querySelector('form');
-            const submitButton = form.querySelector('button[type="submit"]');
-            
-            form.addEventListener('submit', function(e) {
-                submitButton.innerHTML = `
-                    <svg class="w-5 h-5 mr-2 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
-                    </svg>
-                    Updating...
-                `;
-                submitButton.disabled = true;
-            });
-        });
     </script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 <?php
 require_once 'models/Post.php';
 
+// class setup
 class PostController {
     private $pdo;
     private $postModel;
@@ -10,12 +11,14 @@ class PostController {
         $this->postModel = new Post($pdo);
     }
 
+    // this displays all the posts
     public function index() {
         $posts = $this->postModel->getAllPosts();
         require_once 'views/layouts/main.php';
         require_once 'views/posts/index.php';
     }
 
+    // this is for creating a new post
     public function create() {
         if (!isset($_SESSION['user_id'])) {
             header('Location: index.php?controller=user&action=login');
@@ -25,6 +28,7 @@ class PostController {
         require_once 'views/posts/create.php';
     }
 
+    //this is for saving a new post
     public function store() {
         if (!isset($_SESSION['user_id'])) {
             header('Location: index.php?controller=user&action=login');
@@ -58,6 +62,7 @@ class PostController {
         }
     }
 
+    //this is for editing a post
     public function edit($id) {
         if (!isset($_SESSION['user_id'])) {
             header('Location: index.php?controller=user&action=login');
@@ -74,6 +79,7 @@ class PostController {
         require_once 'views/posts/edit.php';
     }
 
+    // this is for updating a post
     public function update($id) {
         if (!isset($_SESSION['user_id'])) {
             header('Location: index.php?controller=user&action=login');
@@ -116,6 +122,7 @@ class PostController {
         }
     }
 
+    //this is for deleting a post
     public function delete($id) {
         if (!isset($_SESSION['user_id'])) {
             header('Location: index.php?controller=user&action=login');

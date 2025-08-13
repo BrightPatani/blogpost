@@ -18,6 +18,7 @@
         }
     </script>
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-50 min-h-screen max-w-screen-lg mx-auto">
     
@@ -25,7 +26,7 @@
         <div class="container mx-auto px-4 py-6">
             <!-- Blog Title -->
             <div class="text-center mb-6">
-                <h1 class="text-4xl font-light text-gray-900 tracking-wide">My Blog</h1>
+                <h1 class="text-4xl font-light text-gray-900 tracking-wide">Mini Blog</h1>
                 <div class="w-16 h-0.5 bg-primary mx-auto mt-3"></div>
             </div>
 
@@ -95,16 +96,6 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         }
         
-    
-        a {
-            text-decoration: none;
-        }
-        
-        * {
-            transition-property: color, background-color, border-color;
-            transition-duration: 200ms;
-            transition-timing-function: ease-in-out;
-        }
     </style>
 </body>
 </html>

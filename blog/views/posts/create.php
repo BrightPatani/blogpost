@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Post - Mini Blog</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#3B82F6',
-                        secondary: '#1E40AF'
-                    }
-                }
-            }
-        }
-    </script>
-</head>
+
 <body class="bg-gray-50 min-h-screen">
     <main class="container mx-auto px-4 py-8">
         <!-- Page Header -->
@@ -111,24 +92,5 @@
             </div>
         </div>
     </main>
-
-    <style>
-        /* Clean form styling */
-        input:focus, textarea:focus {
-            outline: none;
-        }
-        
-        /* Custom file input styling */
-        input[type="file"]::-webkit-file-upload-button {
-            transition: background-color 200ms ease-in-out;
-        }
-        
-        /* Smooth transitions */
-        * {
-            transition-property: color, background-color, border-color, box-shadow;
-            transition-duration: 200ms;
-            transition-timing-function: ease-in-out;
-        }
-    </style>
 </body>
 </html>
