@@ -32,7 +32,6 @@
 
                     <!-- Login Form -->
                     <form action="index.php?controller=user&action=login" method="POST" class="space-y-6">
-                        <!-- Username Field -->
                         <div class="space-y-2">
                             <label for="username" class="block text-sm font-medium text-gray-700">
                                 Username
@@ -77,7 +76,7 @@
                         <div class="mt-4">
                             <a href="index.php" 
                                class="text-sm text-gray-500 hover:text-gray-700 transition-colors duration-200">
-                                ← Back to home
+                                 Back to home
                             </a>
                         </div>
                     </div>
@@ -96,6 +95,5 @@
             </div>
         </div>
     </main>
-
 </body>
 </html>

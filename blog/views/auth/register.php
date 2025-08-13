@@ -1,6 +1,5 @@
 <body class="bg-gray-50 min-h-screen">
     <main class="container mx-auto px-4 py-8">
-        <!-- Page Header -->
         <div class="mb-8 text-center">
             <h2 class="text-3xl font-light text-gray-900 mb-2">Register</h2>
             <div class="w-16 h-0.5 bg-primary mx-auto"></div>
@@ -18,7 +17,6 @@
 
                 <!-- Form Content -->
                 <div class="p-8">
-                    <!-- Error Message -->
                     <?php if (isset($error)): ?>
                         <div class="mb-6 bg-red-50 border border-red-200 rounded-lg p-4">
                             <div class="flex items-start">

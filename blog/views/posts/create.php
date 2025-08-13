@@ -81,7 +81,6 @@
             </div>
         </div>
 
-        <!-- Help Section -->
         <div class="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-6">
             <h4 class="text-sm font-medium text-blue-900 mb-2">Writing Tips</h4>
             <div class="text-sm text-blue-800 space-y-1">

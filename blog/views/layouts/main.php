@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -17,8 +22,7 @@
             }
         }
     </script>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
 </head>
 <body class="bg-gray-50 min-h-screen max-w-screen-lg mx-auto">
     
@@ -68,7 +72,6 @@
 
     <!-- Main content -->
     <main class="container mx-auto mt-8 px-4">
-        <!-- Welcome Section -->
         <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8 text-center">
             <h2 class="text-2xl font-light text-gray-900 mb-4">Welcome</h2>
             <p class="text-gray-600 max-w-2xl mx-auto leading-relaxed">
@@ -93,7 +96,10 @@
     <style>
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: "Playwrite NG Modern", cursive;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
         }
         
     </style>
