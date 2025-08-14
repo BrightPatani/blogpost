@@ -61,7 +61,6 @@
 
                         <!-- Post Content -->
                         <div class="p-6">
-                            <!-- Title -->
                             <h3 class="text-2xl font-bold text-gray-800 mb-4 line-clamp-2 group-hover:text-primary transition-colors">
                                 <?php echo htmlspecialchars($post['title']); ?>
                             </h3>
@@ -84,7 +83,7 @@
                             </div>
                         </div>
 
-                        <!-- Footer Actions -->
+                        <!-- Footer -->
                         <div class="px-6 pb-6">
                             <div class="flex items-center justify-between pt-4 border-t border-gray-100">
                                 <div class="flex items-center space-x-6 text-sm text-gray-500">

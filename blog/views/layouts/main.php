@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script>
@@ -96,8 +96,7 @@
     <style>
 
         body {
-            font-family: "Playwrite NG Modern", cursive;
-            font-optical-sizing: auto;
+            font-family: "Delius", cursive;
             font-weight: 400;
             font-style: normal;
         }
